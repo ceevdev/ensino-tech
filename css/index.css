@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  height: 10vh;
+  height: 13vh;
 }
 
 header nav {
@@ -36,6 +36,24 @@ header nav {
 
 header nav #logo {
   margin-top: 20px;
+}
+
+header nav #menu-toggle {
+  background-color: transparent;
+  border: 0px;
+  width: 10%;
+  padding-top: 10%;
+  position: relative;
+}
+
+header nav #menu-toggle img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 header nav #search {
@@ -66,10 +84,39 @@ header nav #social-medias a img {
   width: 50px;
 }
 
+#menu-hamburger {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow-y: auto;
+  gap: 2vh;
+  z-index: 10;
+}
+
+#menu-hamburger #sidebar{
+  width: 100vw;
+}
+
+#menu-hamburger #sidebar h2 {
+  font-size: 4.5vw;
+}
+
+#menu-hamburger #sidebar a {
+  font-size: 4vw;
+}
+
+#menu-hamburger #social-medias a img {
+  width: 10vw;
+}
+
 #app {
   display: flex;
   width: 100vw;
-  height: 90vh;
+  height: 87vh;
 }
 
 #content {
@@ -78,6 +125,7 @@ header nav #social-medias a img {
 }
 
 #content #content-body {
+  overflow-y: auto;
   background-image: url("../img/background.jpg");
   height: 90%;
 }
@@ -87,10 +135,19 @@ header nav #social-medias a img {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   color: rgba(var(--white));
   font-family: var(--primary-font);
   padding: 30px;
+}
+
+#content #content-body .center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 #content #content-body h2{
@@ -112,6 +169,11 @@ header nav #social-medias a img {
   width: 95%;
 }
 
+#content #content-body ul li h3 {
+  font-size: 1vw;
+  font-weight: 400;
+}
+
 #content #content-footer {
   height: 10%;
   padding: 20px 20px 0px 0px;
@@ -122,4 +184,47 @@ header nav #social-medias a img {
   font-size: 0.9vw;
   font-weight: 400;
   color: rgba(var(--white));
+}
+
+.fade-menu {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow-y: auto;
+  gap: 2vh;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none; /* Previne cliques enquanto invisível */
+}
+
+.fade-menu.show {
+  opacity: 1;
+  pointer-events: auto; /* Permite cliques quando visível */
+}
+
+@media screen and (max-width: 780px) {
+  #content {
+    width: 100vw;
+  }
+
+  #content #content-body h2{
+    font-size: 4.1vw;
+  }
+
+  #content #content-body h4{
+    font-size: 3.2vw;
+  }
+
+  #content #content-body ul li h3 {
+    font-size: 3vw;
+  }
+
+  #content #content-footer h3, a {
+    font-size: 3vw;
+  }
 }

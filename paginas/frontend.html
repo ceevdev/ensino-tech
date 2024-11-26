@@ -1,68 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/sidebar.css">
-    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-    <title>Frontend | CEEV</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="../index.html" id="logo">
-            <img src="../img/logo.svg"/>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <title>Frontend | CEEV</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" id="logo">
+        <img src="../img/logo.svg" />
+      </a>
+      <button id="menu-toggle" style="display: none;">
+        <img src="../img/icons/menu.png" alt="Menu button" />
+      </button>
+      <div id="search">
+        <input id="search-field" placeholder="Pesquisar">
+        <img src="../img/icons/search.png">
+      </div>
+      <div id="social-medias">
+        <a href="https://www.tiktok.com/@terceiro.tec.ceev?lang=pt-BR">
+          <img src="../img/social-media/tiktok.png">
         </a>
-        <div id="search">
-          <input id="search-field" placeholder="Pesquisar">
-          <img src="../img/icons/search.png">
-        </div>
-        <div id="social-medias">
-            <a href="https://www.tiktok.com/@terceiro.tec.ceev?lang=pt-BR">
-                <img src="../img/social-media/tiktok.png">
-            </a>
-            <a href="https://api.whatsapp.com/send/?phone=%2B554132522450&type=phone_number&app_absent=0">
-                <img src="../img/social-media/whatsapp.png">
-            </a>
-            <a href="https://www.instagram.com/terceiraoceev/">
-                <img src="../img/social-media/instagram.png">
-            </a>
-        </div>
-      </nav>
-    </header>
-    <div id="app">
-      <section id="sidebar">
-        <div>
-          <h2>Cursos</h2>
-          <a id="selected">Frontend</a>
-          <a href="../paginas/backend.html">Backend</a>
-          <a href="../paginas/mobile.html">Mobile</a>
-          <a href="../paginas/figma.html">Figma</a>
-          <a href="../paginas/game-dev.html">Desenvolvimento de jogos</a>
-        </div>
-        <div>
-          <h2>Profissões</h2>
-          <a href="../paginas/eng-software.html">Engenheiro de Software</a>
-          <a href="../paginas/analista-sistemas.html">Analista de Sistemas</a>
-          <a href="../paginas/eng-comput.html">Engenheiro da Computação</a>
-          <a href="../paginas/designer-grafico.html">Designer Gráfico</a>
-          <a href="../paginas/dev.html">Desenvolvedor</a>
-        </div>
-      </section>
-      <section id="content">
-        <div id="content-body">
-          <h2>Frontend</h2>
-          <img src="../img/banners/Frontend.jpeg">
-          <h4>De forma geral, o Front-end compreende a parte visual de sites e aplicações. Ou seja, a área das páginas em que as pessoas podem interagir.
-            Isso significa que o Front-end se relaciona com as partes dos sites que mais se aproximam da pessoa usuária.
-            Sendo assim, as pessoas que trabalham com Front-end são responsáveis por desenvolver uma interface gráfica através de tecnologias bases da Web: HTML, CSS e JavaScript.</h4>
-        </div>
-        <div id="content-footer">
-          <h3>Todos os direitos reservados © 2024 - 3ºT</h3>
-          <a href="./quem-somos.html">Quem somos</a>
-        </div>
-      </section>
-    </div>
-  </body>
+        <a href="https://api.whatsapp.com/send/?phone=%2B554132522450&type=phone_number&app_absent=0">
+          <img src="../img/social-media/whatsapp.png">
+        </a>
+        <a href="https://www.instagram.com/terceiraoceev/">
+          <img src="../img/social-media/instagram.png">
+        </a>
+      </div>
+    </nav>
+  </header>
+  <div id="menu-hamburger" class="fade-menu" style="display: none;"></div>
+  <div id="app">
+    <section id="sidebar">
+      <div>
+        <h2>Cursos</h2>
+        <a id="selected">Frontend</a>
+        <a href="../paginas/backend.html">Backend</a>
+        <a href="../paginas/mobile.html">Mobile</a>
+        <a href="../paginas/figma.html">Figma</a>
+        <a href="../paginas/game-dev.html">Desenvolvimento de jogos</a>
+      </div>
+      <div>
+        <h2>Profissões</h2>
+        <a href="../paginas/eng-software.html">Engenheiro de Software</a>
+        <a href="../paginas/analista-sistemas.html">Analista de Sistemas</a>
+        <a href="../paginas/eng-comput.html">Engenheiro da Computação</a>
+        <a href="../paginas/designer-grafico.html">Designer Gráfico</a>
+        <a href="../paginas/dev.html">Desenvolvedor</a>
+      </div>
+    </section>
+    <section id="content">
+      <div id="content-body">
+        <h2>Frontend</h2>
+        <img src="../img/banners/Frontend.jpeg">
+        <h4>Qual a importância do desenvolvimento front-end?</h4>
+        <h4>Se um site ou sistema de gestão não é simples de entender ou não possui fácil usabilidade, então a aderência
+          do usuário será menor. O papel do desenvolvimento front-end é facilitar a usabilidade e garantir que a
+          ferramenta realmente funcione conforme o esperado.</h4>
+        <h4>Um site, por exemplo, pode perder tráfego orgânico se apresentar erros constantemente. Isso acontece pois as
+          pessoas que visitam um site assim costumam perder a confiança na empresa que está por trás dele. Além disso,
+          um site com erros constantes ou lentidão torna a navegação quase impossível.</h4>
+
+        <h4>Além disso, sites responsivos saem na frente por causa do constante aumento de tráfego vindo de dispositivos
+          móveis. Portanto, ao utilizar linguagens front-end, é preciso ter essa questão em mente. O problema de
+          usabilidade ruim se aplica também a softwares, afinal, é preciso que o usuário consiga entender como a
+          ferramenta opera.</h4>
+        <h4>Diferença entre front-end e back-end<h4>
+            <h4>Nem sempre a diferença entre front-end e back-end é muito clara. Trata-se de um assunto mais complexo,
+              porém é essencial entender pelo menos as diferenças básicas entre os dois.</h4>
+            <h4>Podemos classificar como back-end tudo o que envolve como o projeto funciona, seja ele um site ou
+              sistema. Ou seja, tudo o que o usuário não pode ver, como o banco de dados e também os servidores. Aqui
+              também é onde entra a segurança, estrutura e gerenciamento de conteúdo.</h4>
+            <h4>O back-end é essencial para que tudo funcione bem e cumpra com a proposta do projeto. Um exemplo disso
+              é um site dinâmico, que atualiza em tempo real com novas informações, como, por exemplo, um site de
+              notícias. É preciso que seu banco de dados funcione corretamente para que o site não apresente problemas
+              técnicos.</h4>
+            <h4>Já o front-end, como comentamos antes, é a conexão entre as funcionalidades de um sistema ou site com
+              o usuário. Portanto, os dois são igualmente essenciais para que o produto funcione bem de modo geral e
+              seja bem aceito pelos clientes.</h4>
+      </div>
+      <div id="content-footer">
+        <h3>Todos os direitos reservados © 2024 - 3ºT</h3>
+        <a href="./quem-somos.html">Quem somos</a>
+      </div>
+    </section>
+  </div>
+  <script src="../js/index.js"></script>
+</body>
+
 </html>

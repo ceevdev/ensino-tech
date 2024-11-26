@@ -12,8 +12,11 @@
     <header>
       <nav>
         <a href="./index.html" id="logo">
-          <img src="./img/logo.svg"/>
+          <img src="./img/logo.svg" alt="Escudo do Colégio Estadual Ernani Vidal"/>
         </a>
+        <button id="menu-toggle" style="display: none;">
+          <img src="./img/icons/menu.png" alt="Menu button" />
+        </button>
         <div id="search">
           <input id="search-field" placeholder="Pesquisar">
           <img src="./img/icons/search.png">
@@ -31,6 +34,7 @@
         </div>
       </nav>
     </header>
+    <div id="menu-hamburger" class="fade-menu" style="display: none;"></div>
     <div id="app">
       <section id="sidebar">
         <div>
@@ -52,11 +56,13 @@
       </section>
       <section id="content">
         <div id="content-body">
-          <h2>Bem-vindo ao Mundo do Ensino Técnico no Ensino Médio!</h2>
-          <h4>Este site foi criado por alunos do 3º ano do ensino médio com o objetivo de ajudar você a entender como o ensino técnico funciona e como ele pode transformar sua jornada escolar e seu futuro profissional. Aqui, você vai descobrir tudo sobre o ensino técnico integrado ao ensino médio: os cursos disponíveis, como eles funcionam na prática, as oportunidades que podem surgir e como ele prepara você tanto para o mercado de trabalho quanto para a faculdade.
-            Explorando cada página, você verá depoimentos reais de alunos, conhecerá os projetos incríveis desenvolvidos nas aulas e verá de perto a estrutura e o apoio que o ensino técnico oferece para ajudar você a descobrir seus talentos e construir uma carreira promissora. Navegue, tire suas dúvidas e inspire-se para fazer sua escolha!
-            Estamos aqui para mostrar que o ensino técnico pode ser o primeiro passo para realizar seus sonhos. Explore e prepare-se para o seu futuro!</h4>
-          <a href="https://ernanividal.com.br">Site oficial do CEEV</a>
+          <div class="center">
+            <h2>Bem-vindo ao Mundo do Ensino Técnico no Ensino Médio!</h2>
+            <h4>Este site foi criado por alunos do 3º ano do ensino médio com o objetivo de ajudar você a entender como o ensino técnico funciona e como ele pode transformar sua jornada escolar e seu futuro profissional. Aqui, você vai descobrir tudo sobre o ensino técnico integrado ao ensino médio: os cursos disponíveis, como eles funcionam na prática, as oportunidades que podem surgir e como ele prepara você tanto para o mercado de trabalho quanto para a faculdade.
+              Explorando cada página, você verá depoimentos reais de alunos, conhecerá os projetos incríveis desenvolvidos nas aulas e verá de perto a estrutura e o apoio que o ensino técnico oferece para ajudar você a descobrir seus talentos e construir uma carreira promissora. Navegue, tire suas dúvidas e inspire-se para fazer sua escolha!
+              Estamos aqui para mostrar que o ensino técnico pode ser o primeiro passo para realizar seus sonhos. Explore e prepare-se para o seu futuro!</h4>
+            <a href="https://ernanividal.com.br">Site oficial do CEEV</a>
+          </div>
         </div>
         <div id="content-footer">
           <h3>Todos os direitos reservados © 2024 - 3ºT</h3>
@@ -64,5 +70,6 @@
         </div>
       </section>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>

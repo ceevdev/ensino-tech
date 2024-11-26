@@ -1,67 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/sidebar.css">
-    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-    <title>Desenvolvimento de Jogos | CEEV</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="../index.html" id="logo">
-          <img src="../img/logo.svg"/>
-        </a>
-        <div id="search">
-          <input id="search-field" placeholder="Pesquisar">
-          <img src="../img/icons/search.png">
-        </div>
-        <div id="social-medias">
-          <a href="https://www.tiktok.com/@terceiro.tec.ceev?lang=pt-BR">
-              <img src="../img/social-media/tiktok.png">
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=%2B554132522450&type=phone_number&app_absent=0">
-              <img src="../img/social-media/whatsapp.png">
-          </a>
-          <a href="https://www.instagram.com/terceiraoceev/">
-              <img src="../img/social-media/instagram.png">
-          </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <title>Desenvolvimento de Jogos | CEEV</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" id="logo">
+        <img src="../img/logo.svg" />
+      </a>
+      <button id="menu-toggle" style="display: none;">
+        <img src="../img/icons/menu.png" alt="Menu button" />
+      </button>
+      <div id="search">
+        <input id="search-field" placeholder="Pesquisar">
+        <img src="../img/icons/search.png">
       </div>
-      </nav>
-    </header>
-    <div id="app">
-      <section id="sidebar">
-        <div>
-          <h2>Cursos</h2>
-          <a href="../paginas/frontend.html">Frontend</a>
-          <a href="../paginas/backend.html">Backend</a>
-          <a href="../paginas/mobile.html">Mobile</a>
-          <a href="../paginas/figma.html">Figma</a>
-          <a id="selected">Desenvolvimento de jogos</a>
-        </div>
-        <div>
-          <h2>Profissões</h2>
-          <a href="../paginas/eng-software.html">Engenheiro de Software</a>
-          <a href="../paginas/analista-sistemas.html">Analista de Sistemas</a>
-          <a href="../paginas/eng-comput.html">Engenheiro da Computação</a>
-          <a href="../paginas/designer-grafico.html">Designer Gráfico</a>
-          <a href="../paginas/dev.html">Desenvolvedor</a>
-        </div>
-      </section>
-      <section id="content">
-        <div id="content-body">
-          <h2>Desenvolvimento de Jogos</h2>
-          <img src="../img/banners/Game-dev.png">
-          <h4>Os desenvolvedores de jogos projetam e criam jogos para computadores, celulares e consoles. Eles estão envolvidos na concepção, bem como a execução do projeto.
-            Embora os requisitos de educação variem com base em empregadores, muitos desenvolvedores de jogos em potencial procuram um diploma de bacharel em ciência da computação, engenharia de software ou um campo relacionado — mas já existem cursos específicos.</h4>
-        </div>
-        <div id="content-footer">
-          <h3>Todos os direitos reservados © 2024 - 3ºT</h3>
-          <a href="./quem-somos.html">Quem somos</a>
-        </div>
-      </section>
-    </div>
-  </body>
+      <div id="social-medias">
+        <a href="https://www.tiktok.com/@terceiro.tec.ceev?lang=pt-BR">
+          <img src="../img/social-media/tiktok.png">
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=%2B554132522450&type=phone_number&app_absent=0">
+          <img src="../img/social-media/whatsapp.png">
+        </a>
+        <a href="https://www.instagram.com/terceiraoceev/">
+          <img src="../img/social-media/instagram.png">
+        </a>
+      </div>
+    </nav>
+  </header>
+  <div id="menu-hamburger" class="fade-menu" style="display: none;"></div>
+  <div id="app">
+    <section id="sidebar">
+      <div>
+        <h2>Cursos</h2>
+        <a href="../paginas/frontend.html">Frontend</a>
+        <a href="../paginas/backend.html">Backend</a>
+        <a href="../paginas/mobile.html">Mobile</a>
+        <a href="../paginas/figma.html">Figma</a>
+        <a id="selected">Desenvolvimento de jogos</a>
+      </div>
+      <div>
+        <h2>Profissões</h2>
+        <a href="../paginas/eng-software.html">Engenheiro de Software</a>
+        <a href="../paginas/analista-sistemas.html">Analista de Sistemas</a>
+        <a href="../paginas/eng-comput.html">Engenheiro da Computação</a>
+        <a href="../paginas/designer-grafico.html">Designer Gráfico</a>
+        <a href="../paginas/dev.html">Desenvolvedor</a>
+      </div>
+    </section>
+    <section id="content">
+      <div id="content-body">
+        <h2>Desenvolvimento de Jogos</h2>
+        <img src="../img/banners/Game-dev.png">
+        <h4>Um desenvolvedor de jogos é um profissional que cria jogos eletrônicos para diversas plataformas, como consoles, PCs, dispositivos móveis e VR (realidade virtual).</h4>
+        <h4>Funções:</h4>
+        <ul>
+          <li><h3>Escrever o código que faz o jogo funcionar;</h3></li>
+          <li><h3>Criar mecânicas de jogo, níveis, personagens e interfaces;</h3></li>
+          <li><h3>Produzir gráficos, modelagem 3D, texturas e animações;</h3></li>
+          <li><h3>Criar ou integrar música e efeitos sonoros;</h3></li>
+          <li><h3>Testar o jogo para encontrar bugs e melhorar a experiência do usuário.</h3></li>
+        </ul>
+        <h4>Utilidade:</h4>
+        <ul>
+          <li><h3>Proporcionar diversão e escapismo para jogadores;</h3></li>
+          <li><h3>Desenvolver jogos educativos que ajudam no aprendizado de diversas disciplinas;</h3></li>
+          <li><h3>Criar simulações para treinamento em diversas áreas, como medicina e aviação;</h3></li>
+          <li><h3>Facilitar interações sociais por meio de jogos multiplayer e comunidades online.</h3></li>
+        </ul>
+        <h4>O que faz:</h4>
+        <ul>
+          <li><h3>Desenvolve a ideia do jogo e cria roteiros detalhados;</h3></li>
+          <li><h3>Escreve e testa o código usando linguagens de programação como C++, C#, e Python;</h3></li>
+          <li><h3>Trabalha com artistas, designers e engenheiros de som para garantir que todos os elementos do jogo funcionem bem juntos;</h3></li>
+          <li><h3>Executa testes rigorosos para garantir que o jogo esteja livre de bugs e seja jogável;</h3></li>
+          <li><h3>Lança patches e atualizações após o lançamento para corrigir problemas e adicionar novos conteúdos.</h3></li>
+        </ul>
+        <h4>Exemplos de Ferramentas Utilizadas:</h4>
+        <ul>
+          <li><h3><b>Motores de Jogos:</b> Unity, Unreal Engine, Godot;</h3></li>
+          <li><h3><b>Software de Arte:</b> Photoshop, Blender, Maya;</h3></li>
+          <li><h3><b>Plataformas de Colaboração:</b> GitHub, Jira, Trello.</h3></li>
+        </ul>        
+      </div>
+      <div id="content-footer">
+        <h3>Todos os direitos reservados © 2024 - 3ºT</h3>
+        <a href="./quem-somos.html">Quem somos</a>
+      </div>
+    </section>
+  </div>
+  <script src="../js/index.js"></script>
+</body>
+
 </html>

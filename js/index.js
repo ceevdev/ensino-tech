@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Site Version: v1.1.2\nMenu Hamburger: https://github.com/ceevdev/ceev-html/blob/main/js/index.js\nDev: https://github.com/slx10")
+    console.log("Site Version: v1.2\nMenu Hamburger: https://github.com/ceevdev/ceev-html/blob/main/js/index.js\nDev: https://github.com/slx10")
 
     const menuHamburger = document.getElementById("menu-hamburger");
+    const controller = document.getElementById("controller");
     if (menuHamburger) {
         function hideElement(element) {
             element.style.display = "none";
@@ -58,6 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 hideElement(document.getElementById("social-medias"));
                 hideElement(document.getElementById("sidebar"));
                 showElement(document.getElementById("menu-toggle"));
+                if (controller) {
+                    showElement(document.getElementById("controller"))
+                }
                 
                 const sidebarNew = document
                     .getElementById("sidebar")
@@ -71,6 +75,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 showElement(socialMediasNew);
                 menuHamburger.append(sidebarNew,socialMediasNew);
             } else {
+                if (controller) {
+                    hideElement(document.getElementById("controller"))
+                }
                 hideElement(document.getElementById("menu-toggle"));
                 showElement(document.getElementById("search"));
                 showElement(document.getElementById("social-medias"));

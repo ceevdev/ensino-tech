@@ -131,6 +131,17 @@ header nav #search #search-field:focus {
   height: 100%;
 }
 
+#content #controller {
+  display: flex;
+  height: 5%;
+}
+
+#content #controller a {
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
 #content #content-body {
   overflow-y: auto;
   background-image: url("../img/background.jpg");
@@ -201,7 +212,7 @@ header nav #search #search-field:focus {
 }
 
 #content #content-footer {
-  height: 10%;
+  height: 5%;
   padding: 20px 20px 0px 0px;
 }
 

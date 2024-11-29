@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Site Version: v1.2\nMenu Hamburger: https://github.com/ceevdev/ceev-html/blob/main/js/index.js\nDev: https://github.com/slx10")
+    console.log("Site Version: v1.2.1\nMenu Hamburger: https://github.com/ceevdev/ceev-html/blob/main/js/index.js\nDev: https://github.com/slx10")
 
     const menuHamburger = document.getElementById("menu-hamburger");
     const controller = document.getElementById("controller");

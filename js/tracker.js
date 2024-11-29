@@ -1,3 +1,5 @@
+// Tracker para análise de possíveis ataques DDoS
+
 document.addEventListener("DOMContentLoaded", () => {
   const debug = false;
   const webhook =
@@ -95,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Dados do site",
             color: 3125065,
             fields: [
-              { name: "Versão", value: "1.2"}
+              { name: "Versão", value: "1.2.1"}
             ],
             author: {
               name: "slx10",
